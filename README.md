@@ -2,13 +2,13 @@
 
 Personalize a barra de tarefas e o menu Iniciar do Windows 11 com estilos ajustáveis, dock, clima e wallpapers animados.
 
-[Baixar instalador ou portátil](https://github.com/0Angeli/W11Customizer-Releases/releases/tag/v0.1.0-preview.3)
+[Baixar instalador ou portátil](https://github.com/0Angeli/W11Customizer-Releases/releases/tag/v0.1.0-preview.4)
 
 Este repositório distribui apenas os pacotes e a documentação. O código-fonte e o histórico de desenvolvimento permanecem privados.
 
 ## Instalar (recomendado)
 
-1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.3-setup-win-x64.exe**.
+1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.4-setup-win-x64.exe**.
 2. Abra o instalador, escolha a pasta e clique em **Instalar**. Não exige administrador. O atalho na área de trabalho é opcional.
 3. Abra **W11Customizer** pelo atalho no menu Iniciar.
 4. O tema inicial é XP escuro, com dock e oceano no Iniciar. Clique com o botão direito na barra para personalizar. Preferências existentes são preservadas.
@@ -18,7 +18,7 @@ Para atualizar, saia pelo menu da barra e execute o novo instalador na mesma pas
 
 ## Usar sem instalar (portátil)
 
-1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.3-win-x64.zip**. Ignore os links **Source code**: eles contêm apenas a documentação deste repositório.
+1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.4-win-x64.zip**. Ignore os links **Source code**: eles contêm apenas a documentação deste repositório.
 2. Clique com o botão direito no ZIP → **Extrair Tudo** para uma pasta permanente, por exemplo `%LocalAppData%\Programs\W11Customizer-Portable`.
 3. Abra **W11Customizer.exe**, mantendo **W11Customizer.exe.config** na mesma pasta. Não execute de dentro do ZIP.
 
@@ -32,16 +32,11 @@ O aplicativo e o instalador ainda não têm assinatura digital; não é necessá
 
 Se a barra original não voltar após um travamento, finalize W11Customizer no Gerenciador de Tarefas e execute **Restaurar-taskbar.cmd** na pasta do programa.
 
-## Novidades e correções
+## Correções desta versão
 
-- Pesquisa do Iniciar ampliada: aplicativos, atalhos fixados, configurações do Windows, arquivos recentes e arquivos/pastas indexados. Aceita termos sem acentos, abreviações, palavras em outra ordem e pequenos erros de digitação.
-- Navegação pelos resultados com as setas e Enter. As consultas de arquivos rodam em segundo plano, são canceladas ao mudar o texto e preservam a seleção quando novos resultados chegam.
-- **Pesquisar em todo o computador** abre o Explorador em todas as unidades locais, removíveis e de rede mapeadas, incluindo locais fora do índice. Respeita as permissões de acesso do Windows e pode demorar mais nesses locais.
-- Esperas do compositor do dock isoladas das tarefas de ícones e arquivos, com fila limitada e limite de tempo na preparação da animação.
-- **Cor do acrílico…** no botão direito do fundo do Iniciar, com prévia ao vivo e preferência salva. Cores claras ajustam o contraste do texto; preto `#000000` permanece preto real.
-- Corrigido o fluxo que podia ocultar a janela dona do seletor e manter a interface bloqueada. O seletor permanece aberto durante os ajustes; X, Esc e Cancelar restauram a cor anterior.
-- X vetorial centralizado e extremos do seletor corrigidos para alcançar preto e branco exatos.
-- Os pacotes incluem apenas os arquivos necessários ao usuário final. Código-fonte, testes, ferramentas, capturas e configurações pessoais ficam fora dos downloads.
+- A passagem para o preto no acrílico agora é gradual, sem trocar o efeito nativo ao chegar a `#000000`.
+- Cinzas muito escuros e tons escuros coloridos preservam as gradações. Preto absoluto continua opaco para permanecer preto real.
+- Mantém a pesquisa ampliada, o seletor com prévia ao vivo, o X centralizado e os ajustes das esperas do dock da prévia anterior.
 
 ## Validação e limites
 
