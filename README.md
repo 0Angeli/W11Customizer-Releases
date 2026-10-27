@@ -2,13 +2,13 @@
 
 Personalize a barra de tarefas e o menu Iniciar do Windows 11 com estilos ajustáveis, dock, clima e wallpapers animados.
 
-[Baixar instalador ou portátil](https://github.com/0Angeli/W11Customizer-Releases/releases/tag/v0.1.0-preview.6)
+[Baixar instalador ou portátil](https://github.com/0Angeli/W11Customizer-Releases/releases/tag/v0.1.0-preview.7)
 
 Este repositório distribui apenas os pacotes e a documentação. O código-fonte permanece privado.
 
 ## Instalar (recomendado)
 
-1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.6-setup-win-x64.exe**.
+1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.7-setup-win-x64.exe**.
 2. Abra o instalador, escolha a pasta e clique em **Instalar**. Não exige administrador. O atalho na área de trabalho é opcional.
 3. Abra **W11Customizer** pelo atalho no menu Iniciar.
 4. O tema inicial é XP escuro, com dock e oceano no Iniciar. Clique com o botão direito na barra para personalizar. Preferências existentes são preservadas.
@@ -18,7 +18,7 @@ Para atualizar, saia pelo menu da barra e execute o novo instalador na mesma pas
 
 ## Usar sem instalar (portátil)
 
-1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.6-win-x64.zip**. Ignore os links **Source code**: eles contêm apenas a documentação deste repositório.
+1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.7-win-x64.zip**. Ignore os links **Source code**: eles contêm apenas a documentação deste repositório.
 2. Clique com o botão direito no ZIP → **Extrair Tudo** para uma pasta permanente, por exemplo `%LocalAppData%\Programs\W11Customizer-Portable`.
 3. Abra **W11Customizer.exe**, mantendo **W11Customizer.exe.config** na mesma pasta. Não execute de dentro do ZIP.
 
@@ -34,6 +34,8 @@ Se a barra original não voltar após um travamento, finalize W11Customizer no G
 
 ## Novidades
 
+- Clique novamente no atalho da bandeja para minimizar sua janela em foco; outro clique restaura. Janelas abertas em segundo plano são trazidas para frente.
+- Arraste os atalhos para reorganizar a bandeja. Soltar após arrastar não abre o arquivo, e o dock permanece visível durante o arraste.
 - Arraste pastas e arquivos do Explorador para a bandeja, ao lado do ícone de rede, para criar atalhos.
 - Botão direito na barra ou na rede → **Atalhos da bandeja** → **Adicionar pasta** ou **Adicionar arquivos**.
 - Botão direito em um atalho permite abrir, mover para a esquerda/direita ou remover. Os arquivos originais permanecem no lugar.
