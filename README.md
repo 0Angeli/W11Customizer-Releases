@@ -2,13 +2,13 @@
 
 Personalize a barra de tarefas e o menu Iniciar do Windows 11 com estilos ajustáveis, dock, clima e wallpapers animados.
 
-[Baixar instalador ou portátil](https://github.com/0Angeli/W11Customizer-Releases/releases/tag/v0.1.0-preview.11)
+[Baixar instalador ou portátil](https://github.com/0Angeli/W11Customizer-Releases/releases/tag/v0.1.0-preview.12)
 
 Este repositório distribui apenas os pacotes e a documentação. O código-fonte permanece privado.
 
 ## Instalar (recomendado)
 
-1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.11-setup-win-x64.exe**.
+1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.12-setup-win-x64.exe**.
 2. Abra o instalador, escolha a pasta e clique em **Instalar**. Não exige administrador. O atalho na área de trabalho é opcional.
 3. Abra **W11Customizer** pelo atalho no menu Iniciar.
 4. O tema inicial é XP escuro, com dock e oceano no Iniciar. Clique com o botão direito na barra para personalizar. Preferências existentes são preservadas.
@@ -18,7 +18,7 @@ Para atualizar, saia pelo menu da barra e execute o novo instalador na mesma pas
 
 ## Usar sem instalar (portátil)
 
-1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.11-win-x64.zip**. Ignore os links **Source code**: eles contêm apenas a documentação deste repositório.
+1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.12-win-x64.zip**. Ignore os links **Source code**: eles contêm apenas a documentação deste repositório.
 2. Clique com o botão direito no ZIP → **Extrair Tudo** para uma pasta permanente, por exemplo `%LocalAppData%\Programs\W11Customizer-Portable`.
 3. Abra **W11Customizer.exe**, mantendo **W11Customizer.exe.config** na mesma pasta. Não execute de dentro do ZIP.
 
@@ -33,6 +33,18 @@ O aplicativo e o instalador ainda não têm assinatura digital; não é necessá
 Se a barra original não voltar após um travamento, finalize W11Customizer no Gerenciador de Tarefas e execute **Restaurar-taskbar.cmd** na pasta do programa.
 
 ## Novidades
+
+- Tema inicial XP escuro com cor `#0D0F17`, sem neon na barra nem no clique dos ícones. Configurações existentes são preservadas.
+- Menu de contexto reorganizado: **Modo dock** fica acima de **Temas**; o tema azul agora se chama **XP Luna**.
+- Realces compartilhados, indicadores proporcionais aos ícones, atalhos da bandeja com escala ajustada e contraste suave sobre os wallpapers do Iniciar.
+- **Personalizar → Cores e estilo:** prévia ao vivo, referência visual e botão para desfazer os ajustes. **Temas** permite alternar os perfis salvos, incluindo o wallpaper.
+- **Personalizar → Janelas:** regras por aplicativo para manter o dock compacto, expandir quando esse programa estiver maximizado, ocultar automaticamente ou excluir o programa da animação Gênio.
+- **Botão direito em uma pasta da bandeja → Explorar conteúdo:** painel com filtro, subpastas e abertura de arquivos, com leitura em segundo plano e limite de 200 itens.
+- Busca do Iniciar com ações para copiar caminho, abrir localização e pesquisar dentro da pasta. O indicador de pesquisa e a seleção do teclado acompanham a chegada dos resultados.
+- Economia na bateria pausa os wallpapers e reduz a frequência dos efeitos de fundo da barra. Uma cópia da configuração é criada após 30 segundos sem novos ajustes, com restauração em **Preferências**.
+- Um processo auxiliar sem interface restaura a barra original após encerramento inesperado do W11Customizer, sem reiniciar o aplicativo automaticamente. Ele não detecta travamentos com o processo ainda aberto. **Preferências → Diagnóstico** permite consultar e exportar informações e erros recentes.
+
+### Correções mantidas
 
 - Corrigido o tamanho final do dock: o recolhimento usa apenas a largura dos elementos e remove o vão artificial entre o widget e o Iniciar.
 - A centralização do Iniciar e dos programas é preservada ajustando a posição do dock compacto, sem acrescentar espaços vazios ao conteúdo. O widget continua visível e clicável durante a transição.
