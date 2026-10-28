@@ -1,16 +1,16 @@
 # W11Customizer
 
-> Aviso: foram relatados bloqueios do executavel da preview.13 pelo Microsoft Defender. A deteccao esta em investigacao e ainda nao foi confirmada como falso positivo. Nao desative a protecao para executar o programa.
-
 Personalize a barra de tarefas e o menu Iniciar do Windows 11 com estilos ajustáveis, dock, clima e wallpapers animados.
 
-[Baixar instalador ou portátil](https://github.com/0Angeli/W11Customizer-Releases/releases/tag/v0.1.0-preview.13)
+[Baixar instalador ou ZIP portátil da preview.14](https://github.com/0Angeli/W11Customizer-Releases/releases/tag/v0.1.0-preview.14)
 
-Este repositório distribui apenas os pacotes e a documentação. O código-fonte permanece privado.
+Este repositório público contém somente downloads e documentação. O código-fonte permanece privado.
+
+> Esta prévia ainda não tem assinatura digital. O código-fonte, executável, instalador e ZIP foram verificados localmente pelo Microsoft Defender, com inteligência `1.461.231.0`, sem detecções nessa varredura. Isso não confirma falso positivo dos alertas anteriores e não garante ausência de bloqueios em outros PCs. Não desative a proteção para executar o programa.
 
 ## Instalar (recomendado)
 
-1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.13-setup-win-x64.exe**.
+1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.14-setup-win-x64.exe**.
 2. Abra o instalador, escolha a pasta e clique em **Instalar**. Não exige administrador. O atalho na área de trabalho é opcional.
 3. Abra **W11Customizer** pelo atalho no menu Iniciar.
 4. O tema inicial é XP escuro, com dock e oceano no Iniciar. Clique com o botão direito na barra para personalizar. Preferências existentes são preservadas.
@@ -20,7 +20,7 @@ Para atualizar, saia pelo menu da barra e execute o novo instalador na mesma pas
 
 ## Usar sem instalar (portátil)
 
-1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.13-win-x64.zip**. Ignore os links **Source code**: eles contêm apenas a documentação deste repositório.
+1. Em **Assets**, baixe **W11Customizer-0.1.0-preview.14-win-x64.zip**. Ignore os links **Source code**: eles contêm apenas a documentação deste repositório.
 2. Clique com o botão direito no ZIP → **Extrair Tudo** para uma pasta permanente, por exemplo `%LocalAppData%\Programs\W11Customizer-Portable`.
 3. Abra **W11Customizer.exe**, mantendo **W11Customizer.exe.config** na mesma pasta. Não execute de dentro do ZIP.
 
@@ -35,6 +35,14 @@ O aplicativo e o instalador ainda não têm assinatura digital; não é necessá
 Se a barra original não voltar após um travamento, finalize W11Customizer no Gerenciador de Tarefas e execute **Restaurar-taskbar.cmd** na pasta do programa.
 
 ## Novidades
+
+- Bibliotecas nativas são carregadas somente do System32 e ferramentas do Windows usam caminhos absolutos.
+- Executável com identificação de produto, publicador, versão e nome interno corretos; compiladores verificados pela assinatura de seus fornecedores.
+- Importação de configurações com limites de tamanho, rejeição de duplicatas e links e substituição atômica dos arquivos.
+- Dados do clima limitados após descompressão; SVGs rejeitam DTDs, entidades externas e estruturas excessivamente grandes ou profundas.
+- Fluxo preparado para assinatura digital e verificação de integridade antes da publicação. Esta prévia é disponibilizada sem assinatura por solicitação do responsável.
+
+### Ajustes visuais mantidos
 
 - A ação **Personalizar** usa a logo do projeto e um nome mais curto.
 - **Temas** recebe um ícone de personalização da aparência; **Atalhos da bandeja** usa um ícone de vínculo.
